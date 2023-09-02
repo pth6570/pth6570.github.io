@@ -2,15 +2,15 @@
 
 ## Paige Hammond
 
-###Contact Information
+### Contact Information
 * Email:
 * GitHub:
 * LinkedIn:
 
-###Education
+### Education
 
-###Professional Background
+### Professional Background
 
-###Bio
+### Bio
 
-###Earth Data Science
+### Earth Data Science
