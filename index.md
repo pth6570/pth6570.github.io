@@ -14,7 +14,6 @@
   </ul>
 </div>
 
-<div id="main">
 ### Contact Information
 * Email: paha6570@colorado.edu
 * GitHub: pth6570.github.io
@@ -34,5 +33,4 @@ I have primarily worked in the fields of public health and social science resear
 
 ### Earth Data Science Interests
 In this Earth Data science series, I am interested in building my programming skills and beginning to build a portfolio of projects specifically related to earth and environmental sciences.
-</div>
 
