@@ -1,7 +1,7 @@
 # Earth Data Science Portfolio
 # Paige Hammond
 
-<nav>
+<div id="mySidenav" class="sidenav">
   <ul>
     <li class="tag-h3">
       <a href="#contact-information">Contact Information</a></li>
@@ -12,8 +12,9 @@
     <li class="tag-h3">
       <a href="#earth-data-science-interests">Earth Data Science Interests</a></li>
   </ul>
-</nav>
+</div>
 
+<div id="main">
 ### Contact Information
 * Email: paha6570@colorado.edu
 * GitHub: pth6570.github.io
@@ -33,3 +34,5 @@ I have primarily worked in the fields of public health and social science resear
 
 ### Earth Data Science Interests
 In this Earth Data science series, I am interested in building my programming skills and beginning to build a portfolio of projects specifically related to earth and environmental sciences.
+</div>
+
