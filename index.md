@@ -1,5 +1,18 @@
+# Earth Data Science Portfolio
 # Paige Hammond
-## Earth Data Science Portfolio
+
+<nav>
+  <ul>
+    <li class="tag-h3">
+      <a href="#contact-information">Contact Information</a></li>
+    <li class="tag-h3">
+      <a href="#education">Education</a></li>
+    <li class="tag-h3">
+      <a href="#bio--professional-background">Bio &amp; Professional Background</a></li>
+    <li class="tag-h3">
+      <a href="#earth-data-science-interests">Earth Data Science Interests</a></li>
+  </ul>
+</nav>
 
 ### Contact Information
 * Email: paha6570@colorado.edu
