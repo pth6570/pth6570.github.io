@@ -19,13 +19,13 @@
 * GitHub: pth6570.github.io
 
 ### Education
-Certificate in Geospatial Information Science
+Certificate in Geospatial Information Science  
 University of Maryland, College Park
 
 MHS in Public Health
-Johns Hopkins Bloomberg School of Public Health
+Johns Hopkins Bloomberg School of Public Health  
 
-BA in Anthropology
+BA in Anthropology  
 University of Rochester
 
 ### Bio & Professional Background
