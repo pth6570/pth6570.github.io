@@ -3,6 +3,17 @@
 
 @import "{{ site.theme }}";
 
+h1 {
+    display: inline;
+}
+
+img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background: #555;
+    display: inline-flex;
+}
 
 .tag-h1 {
     display:none
