@@ -1,5 +1,6 @@
 # Earth Data Science Portfolio
 # Paige Hammond
+![IMG_2443](https://github.com/pth6570/pth6570.github.io/assets/143455160/807e2c74-b421-4ecb-b8c6-33603d1b6e72)
 
 ### Contact Information
 * Email: paha6570@colorado.edu
@@ -9,7 +10,7 @@
 Certificate in Geospatial Information Science  
 University of Maryland, College Park
 
-MHS in Public Health
+MHS in Public Health  
 Johns Hopkins Bloomberg School of Public Health  
 
 BA in Anthropology  
