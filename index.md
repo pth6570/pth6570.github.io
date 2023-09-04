@@ -1,7 +1,6 @@
 # Earth Data Science Portfolio
+<img src="https://github.com/pth6570/pth6570.github.io/assets/143455160/807e2c74-b421-4ecb-b8c6-33603d1b6e72" alt="headshot" width="150">
 # Paige Hammond
-
- <img src="https://github.com/pth6570/pth6570.github.io/assets/143455160/807e2c74-b421-4ecb-b8c6-33603d1b6e72" alt="headshot" width="150">
  
 ### Contact Information
 * Email: paha6570@colorado.edu  
