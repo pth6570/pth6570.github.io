@@ -3,11 +3,11 @@
 
 @import "{{ site.theme }}";
 
-h1 {
+.h1 {
     display: inline;
 }
 
-img {
+.img {
     float: right;
     width: 100px;
     height: 100px;
