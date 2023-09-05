@@ -1,9 +1,6 @@
-<div class="headerTxt"></div>
-
 # Earth Data Science Portfolio 
 <img src="https://github.com/pth6570/pth6570.github.io/assets/143455160/807e2c74-b421-4ecb-b8c6-33603d1b6e72" width="150" id="my_pic" />
 
-# Earth Data Science Portfolio 
 # Paige Hammond
 
 
