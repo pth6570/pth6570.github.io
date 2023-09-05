@@ -7,10 +7,6 @@
     display: inline;
 }
 
-div.headerTxt + table tr:nth-child(even) { 
-    display:none
-}
-
 #my_pic {
     float: right;
     width:125px;
