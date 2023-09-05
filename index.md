@@ -4,9 +4,11 @@
 # Paige Hammond
 
 
+
 ### Contact Information
 * Email: paha6570@colorado.edu  
 * GitHub: pth6570  
+
   
 ---
 ### Education
@@ -25,5 +27,4 @@ I have primarily worked in the fields of public health and social science resear
 
 ---
 ### Earth Data Science Interests
-In this Earth Data science series, I am interested in building my programming skills and beginning to build a portfolio of projects specifically related to earth and environmental sciences.
-
+In this Earth Data science series, I am interested in building my programming skills and beginning to build a portfolio of projects specifically related to earth and environmental sciences. I enjoy learning about pretty much anything, but a few topics of particular interest to me are: mapping of environmental factors and associated disease risks, environmental justice issues, and/or anything related to biodiversity and conservation.
