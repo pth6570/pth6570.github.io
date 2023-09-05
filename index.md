@@ -3,12 +3,12 @@
 
 # Paige Hammond
 
-
+<br>
 
 ### Contact Information
 * Email: paha6570@colorado.edu  
 * GitHub: pth6570  
-
+<br>
   
 ---
 ### Education
