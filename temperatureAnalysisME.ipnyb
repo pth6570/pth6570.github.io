@@ -1,0 +1,46 @@
+# Import Libraries
+import pandas as pd
+import hvplot.pandas
+import holoviews as hv 
+
+
+# Define urls for data
+bangor_temp_url = (
+    'https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/city/time-'
+    'series/USW00014606/tavg/1/7/1895-2023.csv?base_prd=true&begbaseyear=1991&endbaseyear=2020')
+
+caribou_temp_url = (
+    'https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/city/time-series'
+    '/USW00014607/tavg/1/8/1953-2022.csv?base_prd=true&begbaseyear=1901&endbaseyear=2000')
+
+portland_temp_url = (
+    'https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/city/time-series'
+    '/USW00014764/tavg/1/8/1953-2022.csv?base_prd=true&begbaseyear=1901&endbaseyear=2000')
+
+maine_temp_url = ('https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/'
+                  'statewide/time-series/17/tavg/1/8/1953-2022.csv?base_prd=true&'
+                  'begbaseyear=1901&endbaseyear=2000')
+
+# Read in Data
+bangor_temp_df = pd.read_csv(bangor_temp_url, header = 4, names = ['year', 'temp_F', 'Anomaly']
+                             )
+caribou_temp_df = pd.read_csv(caribou_temp_url, header = 4, names = ['year', 'temp_F', 'Anomaly']
+                             )
+portland_temp_df = pd.read_csv(portland_temp_url, header = 4, names = ['year', 'temp_F', 'Anomaly']
+                             )
+maine_temp_df = pd.read_csv(maine_temp_url, header = 4, names = ['year', 'temp_F', 'Anomaly']
+                             )
+
+# Convert Date to Include Year Only
+bangor_temp_df.year  = pd.to_datetime(bangor_temp_df.year, format = '%Y%m').dt.year
+caribou_temp_df.year  = pd.to_datetime(caribou_temp_df.year, format = '%Y%m').dt.year
+portland_temp_df.year  = pd.to_datetime(portland_temp_df.year, format = '%Y%m').dt.year
+maine_temp_df.year  = pd.to_datetime(maine_temp_df.year, format = '%Y%m').dt.year
+
+# # Merge city data
+# maine_city_df = pd.merge(bangor_temp_df, caribou_temp_df, on="year")
+# maine_city_df = pd.merge(maine_city_df, portland_temp_df, on="year")
+# maine_city_df = maine_city_df.drop(columns=['Anomaly_x', 'Anomaly_y', 'Anomaly'])
+
+# Calculate Temperature in Celsius
+# bangor_temp_df['temp_C'] = (bangor_temp_df['temp_F'] - 32) * 5 / 9
