@@ -7546,95 +7546,6 @@ a.anchor-link {
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput">
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/workspaces/pth6570.github.io/notebooks/multispectral_analysis.ipynb Cell 15</span> line <span class="ansi-cyan-fg">1
-</span><span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://codespaces%2Bjubilant-funicular-jj596r97xr7r35w7g/workspaces/pth6570.github.io/notebooks/multispectral_analysis.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> hv.save(choropleth, 'test.png')
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/holoviews/util/__init__.py:807</span>, in <span class="ansi-cyan-fg">save</span><span class="ansi-blue-fg">(obj, filename, fmt, backend, resources, toolbar, title, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    805</span>     if formats[-1] in supported:
-<span class="ansi-green-intense-fg ansi-bold">    806</span>         filename = '.'.join(formats[:-1])
-<span class="ansi-green-fg">--&gt; 807</span> return renderer_obj.save(obj, filename, fmt=fmt, resources=resources,
-<span class="ansi-green-intense-fg ansi-bold">    808</span>                          title=title)
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/holoviews/plotting/renderer.py:598</span>, in <span class="ansi-cyan-fg">Renderer.save</span><span class="ansi-blue-fg">(self_or_cls, obj, basename, fmt, key, info, options, resources, title, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    595</span>     plot.layout.save(basename, embed=True, resources=resources, title=title)
-<span class="ansi-green-intense-fg ansi-bold">    596</span>     return
-<span class="ansi-green-fg">--&gt; 598</span> rendered = self_or_cls(plot, fmt)
-<span class="ansi-green-intense-fg ansi-bold">    599</span> if rendered is None: return
-<span class="ansi-green-intense-fg ansi-bold">    600</span> (data, info) = rendered
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/holoviews/plotting/renderer.py:199</span>, in <span class="ansi-cyan-fg">Renderer.__call__</span><span class="ansi-blue-fg">(self, obj, fmt, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    197</span>     return self.static_html(plot), info
-<span class="ansi-green-intense-fg ansi-bold">    198</span> else:
-<span class="ansi-green-fg">--&gt; 199</span>     data = self._figure_data(plot, fmt, **kwargs)
-<span class="ansi-green-intense-fg ansi-bold">    200</span>     data = self._apply_post_render_hooks(data, obj, fmt)
-<span class="ansi-green-intense-fg ansi-bold">    201</span>     return data, info
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/holoviews/plotting/bokeh/renderer.py:125</span>, in <span class="ansi-cyan-fg">BokehRenderer._figure_data</span><span class="ansi-blue-fg">(self, plot, fmt, doc, as_script, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    123</span> elif fmt == 'png':
-<span class="ansi-green-intense-fg ansi-bold">    124</span>     from bokeh.io.export import get_screenshot_as_png
-<span class="ansi-green-fg">--&gt; 125</span>     img = get_screenshot_as_png(plot.state, driver=state.webdriver)
-<span class="ansi-green-intense-fg ansi-bold">    126</span>     imgByteArr = BytesIO()
-<span class="ansi-green-intense-fg ansi-bold">    127</span>     img.save(imgByteArr, format='PNG')
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/bokeh/io/export.py:271</span>, in <span class="ansi-cyan-fg">get_screenshot_as_png</span><span class="ansi-blue-fg">(obj, driver, timeout, resources, width, height, scale_factor, state)</span>
-<span class="ansi-green-intense-fg ansi-bold">    268</span>         raise ValueError(f'Expected the web driver to have a device pixel ratio greater than {scale_factor}. '
-<span class="ansi-green-intense-fg ansi-bold">    269</span>                          f'Was given a web driver with a device pixel ratio of {device_pixel_ratio}.')
-<span class="ansi-green-intense-fg ansi-bold">    270</span> else:
-<span class="ansi-green-fg">--&gt; 271</span>     web_driver = webdriver_control.get(scale_factor=scale_factor)
-<span class="ansi-green-intense-fg ansi-bold">    272</span> web_driver.maximize_window()
-<span class="ansi-green-intense-fg ansi-bold">    273</span> web_driver.get(f"file://{tmp.path}")
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/bokeh/io/webdriver.py:174</span>, in <span class="ansi-cyan-fg">_WebdriverState.get</span><span class="ansi-blue-fg">(self, scale_factor)</span>
-<span class="ansi-green-intense-fg ansi-bold">    171</span> if not self.reuse or self.current is None or not scale_factor_less_than_web_driver_device_pixel_ratio(
-<span class="ansi-green-intense-fg ansi-bold">    172</span>         scale_factor, self.current):
-<span class="ansi-green-intense-fg ansi-bold">    173</span>     self.reset()
-<span class="ansi-green-fg">--&gt; 174</span>     self.current = self.create(scale_factor=scale_factor)
-<span class="ansi-green-intense-fg ansi-bold">    175</span> return self.current
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/bokeh/io/webdriver.py:178</span>, in <span class="ansi-cyan-fg">_WebdriverState.create</span><span class="ansi-blue-fg">(self, kind, scale_factor)</span>
-<span class="ansi-green-intense-fg ansi-bold">    177</span> def create(self, kind: DriverKind | None = None, scale_factor: float = 1) -&gt; WebDriver:
-<span class="ansi-green-fg">--&gt; 178</span>     driver = self._create(kind, scale_factor=scale_factor)
-<span class="ansi-green-intense-fg ansi-bold">    179</span>     self._drivers.add(driver)
-<span class="ansi-green-intense-fg ansi-bold">    180</span>     return driver
-
-File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/bokeh/io/webdriver.py:196</span>, in <span class="ansi-cyan-fg">_WebdriverState._create</span><span class="ansi-blue-fg">(self, kind, scale_factor)</span>
-<span class="ansi-green-intense-fg ansi-bold">    193</span>         self.kind = "firefox"
-<span class="ansi-green-intense-fg ansi-bold">    194</span>         return driver
-<span class="ansi-green-fg">--&gt; 196</span>     raise RuntimeError("Neither firefox and geckodriver nor a variant of chromium browser and " \
-<span class="ansi-green-intense-fg ansi-bold">    197</span>                        "chromedriver are available on system PATH. You can install the former " \
-<span class="ansi-green-intense-fg ansi-bold">    198</span>                        "with 'conda install -c conda-forge firefox geckodriver'.")
-<span class="ansi-green-intense-fg ansi-bold">    199</span> elif driver_kind == "chromium":
-<span class="ansi-green-intense-fg ansi-bold">    200</span>     return create_chromium_webdriver(scale_factor=scale_factor)
-
-<span class="ansi-red-fg">RuntimeError</span>: Neither firefox and geckodriver nor a variant of chromium browser and chromedriver are available on system PATH. You can install the former with 'conda install -c conda-forge firefox geckodriver'.</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput">
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>:Overlay
-   .Polygons.I :Polygons   [Longitude,Latitude]   (ndvi_mean,name,NBH_NAMES)
-   .WMTS.I     :WMTS   [Longitude,Latitude]</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7642,6 +7553,7 @@ File <span class="ansi-green-fg">/opt/conda/lib/python3.10/site-packages/bokeh/i
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Summary-of-NDVI-in-DC-Neighborhoods">Summary of NDVI in DC Neighborhoods<a class="anchor-link" href="#Summary-of-NDVI-in-DC-Neighborhoods">¶</a></h3><ul>
+<li>A map of NDVI in DC neighborhoods can be viewed at <a href="https://pth6570.github.io/notebooks/dc_ndvi_chororpleth.html">the following page</a>.</li>
 <li>NDVI is lowest in the central areas of Washington, D.C.</li>
 <li>Neighborhoods near the edages of DC tend to have higher NDVI values.</li>
 </ul>
